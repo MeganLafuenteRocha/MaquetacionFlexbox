@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background-color: #dee8ff;
   border-bottom: 1px solid #eee;
   padding: 15px 0;
 }
@@ -36,7 +36,7 @@ header {
 
 .nav-menu {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .nav-menu button {
@@ -45,6 +45,7 @@ header {
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 6px;
 }
 
 .nav-menu button:hover {
@@ -88,13 +89,14 @@ header {
 .read-more {
   display: inline-block;
   padding: 6px 12px;
-  background-color: #f5f5f5;
+  background-color: #195dfc;
   border: 1px solid #ddd;
   margin-top: 15px;
   text-decoration: none;
-  color: #332d30;
+  color: #f5f5f5;
   font-size: 0.9rem;
   width: fit-content;
+  border-radius: 6px;
 }
 
 .service-image {
@@ -109,6 +111,7 @@ header {
   background-image: url("https://bemorex.agency/services/web.webp");
   background-size: cover;
   background-position: center;
+  border-radius: 12px;
 }
 
 .service-image-strategy {
@@ -156,6 +159,7 @@ header {
   width: 100%;
   height: 100%;
   background-image: url("https://bemorex.agency/services/web.webp");
+  border-radius: 12px;
   background-size: 86%;
   background-position: left;
   background-repeat: no-repeat;
@@ -192,11 +196,12 @@ header {
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 6px;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background-color: #f0f0f0;
+  background-color: #dee8ff;
 }
 
 .project-grid {
@@ -228,6 +233,7 @@ header {
   align-items: center;
   position: relative;
   background-image: url("https://bemorex.agency/services/web.webp");
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
 }
@@ -241,28 +247,30 @@ header {
 .learn-more {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #f5f5f5;
+  background-color: #dee8ff;
   border: 1px solid #ddd;
   text-decoration: none;
   color: #332d30;
   font-size: 0.8rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  border-radius: 6px;
 }
 
 .view-all {
   display: block;
   text-align: right;
   padding: 6px 12px;
-  background-color: #f5f5f5;
+  background-color: #195dfc;
   border: 1px solid #ddd;
   text-decoration: none;
-  color: #332d30;
+  color: #f6f6f6;
   width: max-content;
+  border-radius: 6px;
 }
 
 .contact {
-  background-color: #f5f5f5;
+  background-color: #dee8ff;
   padding: 30px 0;
   border-top: 1px solid #ddd;
 }
@@ -282,15 +290,16 @@ header {
 .contact-form input {
   padding: 8px 12px;
   width: 300px;
-  border: 1px solid #ddd;
+  border: 1px solid #195dfc;
 }
 
 .contact-form button {
   padding: 8px 15px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
+  background-color: #195dfc;
+  border: 1px solid #195dfc;
   border-left: none;
   cursor: pointer;
+  color: #fff;
 }
 
 .contact-info {
@@ -322,7 +331,8 @@ header {
   width: 30px;
   height: 30px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #195dfc;
+  border-radius: 20%;
   text-decoration: none;
   color: #332d30;
 }
