@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #332d30;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-menu button {
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-menu button:hover {
+  background-color: #f5f5f5;
+}
+
+.services {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  align-items: center;
+  height: 200px;
+}
+
+.service-info {
+  flex: 1;
+  padding-right: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #332d30;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.service-image {
+  flex: 1;
+  height: 200px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("https://bemorex.agency/services/web.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-image-strategy {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("https://bemorex.agency/services/web.webp");
+  background-size: 86%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.strategy-box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1 !important;
+}
+
+.service-image-double {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image-double::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://bemorex.agency/services/web.webp");
+  background-size: 86%;
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.small-image {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  background-image: url("https://bemorex.agency/services/apps.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.projects {
+  padding: 20px 0 40px;
+}
+
+.project-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #f0f0f0;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.project-card {
+  flex: 0 0 calc(333px - 14px);
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.project-card-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+}
+
+.project-image {
+  height: 180px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("https://bemorex.agency/services/web.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  margin-left: 1rem;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #332d30;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-all {
+  display: block;
+  text-align: right;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #332d30;
+  width: max-content;
+}
+
+.contact {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-form input {
+  padding: 8px 12px;
+  width: 300px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-left: none;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-details {
+  font-size: 0.9rem;
+}
+
+.contact-details p {
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  height: 102px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #332d30;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
